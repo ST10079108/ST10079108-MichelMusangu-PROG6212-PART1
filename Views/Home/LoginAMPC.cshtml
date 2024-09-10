@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "LoginAMPCC";
+}
+<div class="Login-body">
+    <div class="Login-sec1">
+        <img src="~/images/logo.jpg" />
+        <div Ls1-child2>
+            <button class="Login-button"><a asp-area="" asp-controller="Home" asp-action="LoginAMPC">Academic Manager ></a></button>
+            <button class="Login-button"><a asp-area="" asp-controller="Home" asp-action="LoginAMPC">Programme Coordinator ></a></button>
+            <button class="Login-button"><a asp-area="" asp-controller="Home" asp-action="LoginPage">Lecturer ></a></button>
+        </div>
+    </div>
+    <div class="Login-sec2">
+        <img src="~/images/students.jpeg" />
+        <div class="LP-form">
+            <h3>LOGIN FORM</h3>
+            <form>
+                <input type="text" value="Email"><br>
+                <input type="text" value="Password"><br><br>
+                <button class="login-button"><a asp-area="" asp-controller="Home" asp-action="ClaimsAMPC">SUBMIT</a></button>
+            </form>
+        </div>
+
+    </div>
+</div>

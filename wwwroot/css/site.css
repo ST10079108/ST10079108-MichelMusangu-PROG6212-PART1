@@ -1,0 +1,423 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+                                                        /*header section*/
+
+
+.headerSection {
+    background-color: #EDF7FF;
+    overflow: hidden;
+}
+
+    .header-button {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 0;
+        background-color: #045399;
+        color: white;
+        border-block-color: #045399;
+        border-radius: 10px;
+        font-weight:bold;
+        
+    }
+        .header-button a {
+            text-decoration: none;
+            font-size: 11px;
+        }
+        .headerSection img {
+        float: left;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+    }
+
+    /* Style the links inside the navigation bar */
+    .headerSection a {
+        float: right;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+        /* Change the color of links on hover */
+        .headerSection a:hover {
+            background-color: black;
+            color: white;
+            opacity: 0.9;
+        }
+
+        /* Add an active class to highlight the current page */
+        .headerSection a:active {
+            text-decoration: underline;
+        }
+
+    /* Hide the link that should open and close the topnav on small screens */
+    .headerSection .icon {
+        display: none;
+    }
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media (max-width: 780px) {
+    .headerSection a:not(:first-child) {
+        display: none;
+    }
+
+    .headerSection a.icon {
+        float: right;
+        display: block;
+    }
+
+    .headerSection a:hover {
+        background-color: #a81902;
+        color: white;
+        opacity: 0.3;
+    }
+
+    .headerSection a {
+        font-size: 20px;
+    }
+
+        .headerSection a:hover {
+            background-color: #a81902;
+            color: white;
+            opacity: 0.3;
+        }
+
+    .headerSection a {
+        font-size: 20px;
+    }
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 780px) {
+    .headerSection.responsive {
+        position: relative;
+    }
+
+        .headerSection.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .headerSection.responsive a {
+            float: none;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+}
+
+
+                                              /*header section end*/
+
+                                              /*Home*/
+.home-body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EDF7FF;
+    display:flex;
+    flex-direction:column;
+}
+.home-sec1{
+    height:320px; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+    .home-sec1 img{
+        height: 300px;
+       
+    }
+.home-sec2 {
+    min-height: 220px;
+    background-color: #CDE9FF;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+    .hs2-child img{
+        height:80px;
+        width: 120px;
+    }
+    .hs2-child{
+        display:flex;
+        flex-direction:column;
+        width:auto;
+        justify-content:space-evenly;
+        align-items:center;
+        text-align:center;
+        width:170px;
+    }
+                                                /*Home end*/
+
+                                                /*Login*/
+.Login-body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EDF7FF;
+    display: flex;
+    flex-direction: row;
+}
+
+.Login-sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    background-color: #CDE9FF;
+}
+
+    .Login-sec1 img {
+        height: 200px;
+        border-radius:50%;
+    }
+.Login-button {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    border-block-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    text-align: left;
+}
+    .Login-button a {
+        text-decoration:none;
+        color:black;
+    }
+    .Ls1-child2{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.Login-sec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    background-color: #EDF7FF;
+}
+
+.Login-sec2 img{
+    height: 400px;
+    margin-bottom:20px;
+}
+.Ls2-child2{
+    text-align:left;
+}
+
+                                                            /*Login end*/
+
+
+                                                            /*Login Page*/
+
+.LP-form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    width:300px;
+}
+    .LP-form input{
+        width:100%;
+        margin-top:20px;
+        border-radius:10px;
+        padding:5px 10px 5px 10px;
+    }
+    .LP-form form {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+.login-button {
+    width: 100%;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    background-color: #045399;
+    border:none;
+}
+.login-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+                                                            /*Login page end*/
+
+                                                            /*Claims*/
+.Claims-body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EDF7FF;
+   
+}
+.Claims-form-head{
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+    .claims-mc-button {
+        width: 200px;
+        padding: 10px 20px 10px 20px;
+        border-radius: 15px;
+        background-color: #045399;
+        border: none;
+        transform:translateX(500px)
+    }
+.claims-mc-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.claims-form-body {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.claims-form-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.claims-form-column input {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius:10px;
+    margin-bottom: 35px;
+}
+
+.claims-form-column div {
+    display: flex;
+    align-items: center;
+ }
+
+.claims-below-form{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.claims-submit-button {
+    width: 200px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+    background-color: #045399;
+    border: none;
+    margin-top: 50px;
+}
+    .claims-submit-button a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+.claims-calc-button {
+    width: 200px;
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+    background-color: #045399;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.claims-sf-button {
+    width: 200px;
+    padding:5px 10px 5px 10px;
+    border-radius: 15px;
+    background-color: #045399;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transform: translateY(150px);
+}                                                          /*Claims end*/
+
+
+                                                           /*MY claims*/
+.myclaims-body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EDF7FF;
+}
+.mc-child1{
+    display:flex;
+    align-items:center;
+    text-align:left;
+    padding-left:100px;
+    height:40vh;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+tr:nth-child(1) {
+    border-bottom: 2px solid black;
+}
+
+
+table, th, td {
+    border-left: none;
+    border-right: none;
+}
+.mc-child2 button{
+    width: 100px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+    background-color: #045399;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+                                                           /*MY claims end*/

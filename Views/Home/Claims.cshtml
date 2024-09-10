@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Claims";
+}
+<div class="Claims-body">
+
+    <div class="Claims-form-head">
+        <h3>CLAIM FORM</h3>
+        <button class="claims-mc-button"><a asp-area="" asp-controller="Home" asp-action="MyClaims">MY CLAIMS</a></button>
+    </div>
+
+    <form class="claims-form-body">
+
+        <div class="claims-form-column">
+            <div>
+                <input type="text" value="Name">
+            </div>
+            <div>               
+                <input type="text" value="Email">
+            </div>
+            <div>               
+                <input type="email" value="Address">
+            </div>
+            <div>
+                <input type="text" value="Hours Worked">
+            </div>
+            <div>
+                <input type="text" value="Hourly Rate">
+            </div>     
+        </div>
+
+    
+        <div class="claims-form-column">
+            <div>
+                <input type="text" value="Surname">
+            </div>
+            <div>
+                <input type="text" value="Phone Number">
+            </div>
+            <div>
+                <input type="text" value="Description">
+            </div>
+        </div>
+
+       
+        <div class="claims-form-column">
+            <button class="claims-sf-button">SELECT FILE</button>
+        </div>
+    </form>
+
+    <div class="claims-below-form">
+        <button class="claims-calc-button">Calculate</button>
+        <h3>TOTAL(R)</h3>
+    </div>
+    <div class="claims-below-form">
+        <button class="claims-submit-button"><a asp-area="" asp-controller="Home" asp-action="MyClaims">SUBMIT</a></button>
+    </div>
+
+    
+
+</div>
